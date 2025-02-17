@@ -8,6 +8,9 @@ use candle_nn::{VarBuilder, VarMap};
 use tokenizers::tokenizer::{Result, Tokenizer};
 use tokenizers::PaddingParams;
 
+
+
+
 fn main() -> Result<()> {
     let mut tokenizer = Tokenizer::from_pretrained("bert-base-cased", None)?;
     tokenizer.with_padding(Some(PaddingParams::default()));
